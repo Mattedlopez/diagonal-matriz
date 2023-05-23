@@ -10,6 +10,16 @@ int main (){
     printf("Ingresa la cantidad de columnas que quieres: ");
     scanf("%d", &columns);
 
+    for ( i = 0; i < rows; i++){
+        for ( j = 0; j < columns; j++){
+            matriz[i][j] = 0;
+            if (i == j){
+                matriz[i][j] = 1;
+            }
+            printf("%d", matriz[i][j]);
+        }
+        printf("\n");
+    }
     
 
 
